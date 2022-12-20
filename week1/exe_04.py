@@ -13,14 +13,19 @@ Check if '881' is in the model string.
 
 Print out both the serial number and the model.
 """
+from __future__ import print_function, unicode_literals
 
 show_version = "*0        CISCO881-SEC-K9       FTX0000038X    "
 show_version = show_version.strip()
 show_version = show_version.split()
+
 model = show_version[1]
 serial_number = show_version[2]
-has_cisco = 'Cisco' in model
+
+has_cisco = 'cisco' in model.lower()
 has_881 = '881' in model
-print(has_cisco)
-print(has_881)
-print(model, serial_number)
+
+print("Checking if model contains Cisco: {}".format(has_cisco))
+print("Checking if model contains 881: {}".format(has_881))
+print("Serial Number: {}".format(serial_number))
+print("Model: {}".format(model))
