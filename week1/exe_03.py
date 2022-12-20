@@ -8,6 +8,7 @@ Use the from future technique so that any string literals in Python2 are unicode
 compare if variable1 equals variable2
 compare if variable1 is not equal to variable3
 """
+from __future__ import unicode_literals
 
 ip_addr = "3001:0da8:75a3:0000:0000:8a2e:0370:873"
 IP_ADDR = "3001:0da8:75a3:0000:0000:8a2e:0370:6547"
@@ -16,5 +17,7 @@ ip_v6_Addr = "3001:0da8:75a3:0000:0000:8a2e:0370:9123"
 var1 = ip_addr == IP_ADDR
 var2 = ip_addr != ip_v6_Addr
 
-print(var1)
-print(var2)
+print()
+print("Is variable1 equal to variable2: {}".format(var1))
+print("Is variable1 equal to variable2: {}".format(var2))
+print()
