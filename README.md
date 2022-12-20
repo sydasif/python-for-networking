@@ -1,2 +1,2 @@
-# python-for-networking
-Python Networking Course
+# Python-for-Networking
+Python Networking Course Execersise
