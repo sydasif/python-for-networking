@@ -18,4 +18,5 @@ int_list = int_brief.split()
 intf_name = int_list[0]
 ip_address = int_list[1]
 
-print(ip_address, intf_name)
+my_result = (intf_name, ip_address)
+print(my_result)
