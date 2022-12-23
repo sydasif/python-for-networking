@@ -38,8 +38,16 @@ arp_table = [('10.220.88.1', '0062.ec29.70fe'),
 
 for ip, mac in arp_table:
     mac = mac.split('.')
-    mac = ":".join(mac)
+    mac = "".join(mac)
     mac = mac.upper()
-    print(mac)
 
+    new_mac = []
+    
+    while len(mac) > 0:
+        entry = mac[:2]
+        mac = mac[2:]
+        new_mac.append(entry)
 
+    # Reunite MAC address using a colon
+    new_mac = ":".join(new_mac)
+    print(new_mac)
