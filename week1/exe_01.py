@@ -3,7 +3,8 @@
 
 Make your print statement compatible with both Python2 and Python3.
 
-If you are using either Linux or MacOS make your program executable by adding a shebang line and by changing the files permissions (i.e. chmod 755 exercise1.py).
+If you are using either Linux or MacOS make your program executable by adding a shebang
+line and by changing the files permissions (i.e. chmod 755 exercise1.py).
 """
 
 from __future__ import print_function
